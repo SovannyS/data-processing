@@ -1,19 +1,24 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 html {
-    background-color: lightgray;
+    background-color: #BCCEF8;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
-    background-image: url("../images/background.jpg");
+    background-image: url("");
     background-repeat: repeat;
     background-size: 2000px 1200px;
+    
 }
 
 body{
     margin:0; /* removes gap at top of page */
+    display: block;
+  padding: 3rem;
+  width: 60%;
+  margin: auto;
 }
 
 ::selection {
@@ -22,6 +27,7 @@ body{
 }
 
 h1 {
+    text-align: center;
     font-weight: normal;
     margin: auto;
     background: #fff;
@@ -57,26 +63,31 @@ p {
 }
 
 h2,h3 {
+    text-align: center;
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
 }
 
 a {
-    color:darkcyan;
+    color:#CDFCF6;
     text-decoration: none;
 }
 
 a:hover {
     color: whitesmoke;
-    background-color: darkcyan;
+    background-color: #CDFCF6;
     text-decoration: none;
 }
-
+.main-form{
+  
+  width: 30%;
+  margin: auto;
+}
 footer {
     clear: both;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
 }
 
 /* Responsive rules */

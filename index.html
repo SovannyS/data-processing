@@ -21,14 +21,60 @@
      
    <main class="wrapper">
  
-    <h2 class="subheader">Place form code below:</h2>
-    <p>form goes here</p>
-    <h3>Page Origins</h3>
-    <p>The HTML/CSS comes from Sara Newman's Web Fundamentals class as taught at Seattle Central. This page provides a basis for students to build a responsive portal page.</p>
-    <p>The mobile navigation originates from <a href="https://www.w3schools.com/howto/howto_js_mobile_navbar.asp" target="_blank">W3Schools</a></p>
+    <h2 class="subheader" >Place form code below:</h2>
+    <form method="get" action="" class="main-form" >
+      <div>
+        <label for="FirstName">First Name</label><br>
+        <input placeholder="Enter First Name "type="text" name="FirstName" id="name" required autofocus>
+      </div>
+      <div>
+        <label for="LastName">Last Name</label><br>
+        <input placeholder="Enter Last Name "type="text" name="LastName" id="name" required>
+      </div>
+      <div>
+        <label for="Email">Email</label><br>
+        <input placeholder="Enter Email" type="Email" name="Email" id="Email" required>
+      </div>
+      <div>
+        <label for="Number">Age</label> <br>
+        <input placeholder="Age" id="number" type="number" min="0" max="100">
+      </div>
+
+<p>Which track are you enrolled in?</p>
+<div>  
+<label for="Select one"></label>
+  <select  placeholder="Select one" id="dropdown"> 
+    <option>Qauilty Assurance</option>
+    <option>App Development</option>
+    <option> I.T.</option>
+    <option>Business</option>
+    <option>Other</option>
+  </select>
+</div>
+<p>Would you recommend Year-Up to a friend or family member?</p>
+  <div>
+    <nput name="name" value="Definitely" type="radio"> Definitely </div>
+<div>
+    <input name="name" value="Sure" type="radio"> Sure</input></div>
+<div><input name="name" value="Maybe" type="radio">Maybe</input></div>
+<div>
+<p> How did you hear about Year-Up?</p>
+<div> <input value="Facebook" type="checkbox">Facebook</input></div>
+<div> <input value="LinkedIn" type="checkbox">LinkedIn</input></div>
+<div> <input value="Twitter" type="checkbox">Twitter</input></div>
+<div> <input value="Friend or Family" type="checkbox">Friend or Family</input></div>
+<div> <input value="Other" type="checkbox">Other</input></div>
+
+
+<p>How can Year-up improve it's presence online? </p>
+<div> <textarea></textarea> </div><br>
+      <div>
+        <input type="submit" value="Submit it!">
+      </div>
+    </form>
     <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Sovanny Seng, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
