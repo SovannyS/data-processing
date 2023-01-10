@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/main-forms.css">
  </head>
  <body>
      <header>
@@ -36,38 +36,44 @@
         <input placeholder="Enter Email" type="Email" name="Email" id="Email" required>
       </div>
       <div>
-        <label for="Number">Age</label> <br>
-        <input placeholder="Age" id="number" type="number" min="0" max="100">
-      </div>
+        <label for="Address">Address</label><br>
+        <input placeholder="Enter Address "type="text" name="Address " id="Address" required>
+      </div>   
+      <div>
+        <label for="State">State</label><br>
+        <select name="State" id="State">
+          <option value="">Please Select State</option>
+          <option value="AK">Alaska</option>
+          <option value="CA">California</option>
+          <option value="OR">Oregon</option>
+          <option value="WA">Washington</option>
+        </select>
+      </div>   
 
-<p>Which track are you enrolled in?</p>
-<div>  
-<label for="Select one"></label>
-  <select  placeholder="Select one" id="dropdown"> 
-    <option>Qauilty Assurance</option>
-    <option>App Development</option>
-    <option> I.T.</option>
-    <option>Business</option>
-    <option>Other</option>
-  </select>
-</div>
-<p>Would you recommend Year-Up to a friend or family member?</p>
-  <div>
-    <nput name="name" value="Definitely" type="radio"> Definitely </div>
-<div>
-    <input name="name" value="Sure" type="radio"> Sure</input></div>
-<div><input name="name" value="Maybe" type="radio">Maybe</input></div>
-<div>
-<p> How did you hear about Year-Up?</p>
-<div> <input value="Facebook" type="checkbox">Facebook</input></div>
-<div> <input value="LinkedIn" type="checkbox">LinkedIn</input></div>
-<div> <input value="Twitter" type="checkbox">Twitter</input></div>
-<div> <input value="Friend or Family" type="checkbox">Friend or Family</input></div>
-<div> <input value="Other" type="checkbox">Other</input></div>
+      <div>
+      <fieldset>
+        <legend>Would you recommend Year Up ?</legend>
+        <label><input type="radio" name="recommend Year Up" value="Yes" required>Yes</label><br>
+        <label><input type="radio"  name="recommend Year Up" value="No">No</label><br>
+        <label><input type="radio"  name="recommend Year Up" value="Maybe">Maybe</label><br>
+      </fieldset>
+    </div>
+      
+      <div>
+        <fieldset>
+          <legend>Where did you hear about Year Up ?</legend>
+          <label><input type="checkbox" name="WhereDid" value="Facebook">Facebook</label><br>
+          <label><input  type="checkbox" name="WhereDid" value="Twitter">Twitter</label><br>
+          <label><input type="checkbox" name="WhereDid" value="Friend">Friend</label><br>
+          <label><input type="checkbox" name="WhereDid" value="Family">Family</label><br>
+        </fieldset>
+      </div>    
 
 
-<p>How can Year-up improve it's presence online? </p>
-<div> <textarea></textarea> </div><br>
+<div> 
+  <label for="comments"> How can Year-up improve it's presence online? </label>
+  <textarea name="comments" id="comments" placeholder="comments" cols="36" rows="4"></textarea>
+  </div>
       <div>
         <input type="submit" value="Submit it!">
       </div>
