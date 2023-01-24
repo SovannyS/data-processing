@@ -21,7 +21,12 @@ if(queryString.length > 0){
     */
  
  
- 
+  //title case
+  function toTitleCase(str) {
+    return str.toLowerCase().split(' ').map(function (word) {
+      return (word.charAt(0).toUpperCase() + word.slice(1));
+    }).join(' ');
+ }
    urlParams.forEach(function(value, key) {
  
     if(key == "Cart"){//cart
@@ -29,17 +34,17 @@ if(queryString.length > 0){
  
         switch(value){
           case "Widget":
-            myCart += "Widget: $3.99<br>";
+            myCart += "<p>Widget: $3.99</p><br>";
             myTotal += 3.99;
           break;
  
           case "Sprocket":
-            myCart += "Sprocket: $5.99<br>";
+            myCart += "<p>Sprocket: $5.99</p><br>";
             myTotal += 5.99;
           break;
  
           case "Thingy":
-            myCart += "Thingy: $1.99<br>";
+            myCart += "<p>Thingy: $1.99</p><br>";
             myTotal += 1.99;
           break;
         }
@@ -49,8 +54,11 @@ if(queryString.length > 0){
     }else{//shipping label
       //swaps underscores for space
       key = key.split("_").join(" ");
- 
-      myData += `<p>${key}: ${value}</p>`;
+      if((key == "FirstName") || (key == "LastName") || (key == "City") || (key == "Address")) {
+        myData += `<p>${key}: ${toTitleCase(value)}</p>`;
+      } else {
+        myData += `<p>${key}: ${value}</p>`;
+      }
     }
  
  
